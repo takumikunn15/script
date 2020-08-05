@@ -27,6 +27,9 @@ html {
           margin-right: auto;
           height: 100%;
           font-size: 1.3rem; }
+          @media (orientation: portrait) {
+            html body header .header-container .header-left {
+              font-size: 0.9rem; } }
         html body header .header-container .header-right {
           display: flex;
           height: 100%;
@@ -36,18 +39,23 @@ html {
     html body article {
       margin: 0 auto;
       width: 64%;
-      height: 150vh;
       background-color: #fff;
       font-size: 1.2rem; }
       @media (orientation: portrait) {
         html body article {
           width: 100%; } }
       html body article .article-container {
-        padding: 2% 4% 4%; }
+        padding: 2% 4% 4% 4%; }
+        @media (orientation: portrait) {
+          html body article .article-container {
+            padding: 4% 10% 10% 10%; } }
         html body article .article-container .str {
           background: linear-gradient(transparent 50%, rgba(100, 100, 255, 0.25) 65%);
           font-weight: bold;
           font-size: 125%; }
+        @media (orientation: portrait) {
+          html body article .article-container {
+            font-size: 0.85rem; } }
         html body article .article-container .title h2 {
           position: relative;
           margin-bottom: 3vh;
@@ -58,7 +66,8 @@ html {
           text-align: center; }
           @media (orientation: portrait) {
             html body article .article-container .title h2 {
-              width: 100%; } }
+              width: 100%;
+              font-size: 0.9rem; } }
         html body article .article-container .title h2:after {
           position: absolute;
           top: 100%;
@@ -120,3 +129,6 @@ html {
         html body footer .footer-container p {
           text-align: center;
           font-size: 2rem; }
+          @media (orientation: portrait) {
+            html body footer .footer-container p {
+              font-size: 1rem; } }
