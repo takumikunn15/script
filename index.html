@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174611777-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-174611777-1');
+  </script>
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'thw0uqm',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
+  <link rel="stylesheet" href="css/master.nested.css">
+  <script src="https://kit.fontawesome.com/67a3de9edc.js" crossorigin="anonymous" defer="defer"></script>
+  <title>スクリプト置き場</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-left">
+        <h1>スクリプト置き場</h1>
+      </div>
+      <div class="header-right">
+        <div class="twitter-container">
+          <a href="https://twitter.com/takumikunn15">
+            <img src="./images/twitter-square.svg" alt="twitter" width="50px" height="50px">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <!-- グローバルナビ -->
+  </nav>
+  <article>
+    <div class="article-container">
+      <div class="title">
+        <h2>A・Bサイズの矩形、トンボを作成する</h2>
+      </div>
+      <p>
+        指定した<span class="str">A・Bサイズの矩形とトンボを自動でつくるスクリプト</span>を作りました。
+      </p>
+      <div class="img-container">
+        <img src="./images/commentary.gif" alt="commentary-gif">
+      </div>
+      <div class="download-button-container">
+        <a href="./download/trim-mark-maker.jsx" download="トンボメーカー.jsx" class="btn-3d">DOWNLOAD トンボメーカー.jsx</a>
+      </div>
+      <div class="commentary">
+        <h2>使い方や注意</h2>
+        <p>[非推奨]Illustratorのディレクトリ/プリセット/jaJP/スクリプトにスクリプトファイルを置いて再起動すれば、ファイルメニュー→スクリプトにトンボメーカーが追加されます。</p>
+        <p>[推奨]使用時は別作者様の<a href="https://tama-san.com/spai/">SPAi</a>や<a href="https://exchange.adobe.com/creativecloud.details.15873.scripshon-trees.html">Scripshon Trees</a>を使うと、ファイルメニューから実行しなくていい上、入れ替えた後の再起動も必要なく楽です。</p>
+        <p>デバッグは<del>していますが</del>しているつもりですが、まだ不具合がある可能性があるので、バックアップの後ご使用お願いします。</p>
+        <p>不具合や改善点などがあればTwitterの<a href="https://twitter.com/takumikunn15">@takumikunn15</a>までよろしくおねがいします。</p>
+      </div>
+      <div class="change-log">
+        <h2>更新履歴</h2>
+        <h3>Ver<span class="ver-bold">1.0</span><span class="ver-date">(2020/08/06)</span></h3>
+        <p class="ver-content">
+          公開 バグありませんように...
+        </p>
+      </div>
+    </div>
+  </article>
+  <aside>
+    <!-- サイドバー -->
+  </aside>
+  <footer>
+    <div class="footer-container">
+      <p>&copy;2020 takumikunn15</p>
+    </div>
+  </footer>
+</body>
+
+</html>

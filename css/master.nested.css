@@ -1,0 +1,122 @@
+html {
+  font-weight: 300;
+  font-style: normal;
+  font-style: 8px;
+  font-family: a-otf-ud-shin-go-pr6n, sans-serif; }
+  html body {
+    min-height: 100vh;
+    background: #f4f4f4 0 0 no-repeat padding-box; }
+    html body header {
+      display: flex;
+      align-items: center;
+      height: 10vh;
+      background-color: #40AAF4;
+      color: #fff; }
+      html body header .header-container {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        width: 70%;
+        height: 100%; }
+        @media (orientation: portrait) {
+          html body header .header-container {
+            width: 85%; } }
+        html body header .header-container .header-left {
+          display: flex;
+          align-items: center;
+          margin-right: auto;
+          height: 100%;
+          font-size: 1.3rem; }
+        html body header .header-container .header-right {
+          display: flex;
+          height: 100%;
+          place-items: center; }
+          html body header .header-container .header-right twitter-container {
+            height: 60%; }
+    html body article {
+      margin: 0 auto;
+      width: 64%;
+      height: 150vh;
+      background-color: #fff;
+      font-size: 1.2rem; }
+      @media (orientation: portrait) {
+        html body article {
+          width: 100%; } }
+      html body article .article-container {
+        padding: 2% 4% 4%; }
+        html body article .article-container .str {
+          background: linear-gradient(transparent 50%, rgba(100, 100, 255, 0.25) 65%);
+          font-weight: bold;
+          font-size: 125%; }
+        html body article .article-container .title h2 {
+          position: relative;
+          margin-bottom: 3vh;
+          padding: 0.6em;
+          width: 75%;
+          border-radius: 10px;
+          background: #e0edff;
+          text-align: center; }
+          @media (orientation: portrait) {
+            html body article .article-container .title h2 {
+              width: 100%; } }
+        html body article .article-container .title h2:after {
+          position: absolute;
+          top: 100%;
+          left: 30px;
+          width: 0;
+          height: 0;
+          border: 15px solid transparent;
+          border-top: 15px solid #e0edff;
+          content: ''; }
+        html body article .article-container .img-container {
+          display: flex;
+          align-items: center;
+          margin: 3vh 0;
+          width: 100%; }
+          html body article .article-container .img-container img {
+            margin: 0 auto;
+            width: 70%;
+            box-shadow: 0 0 50px -32px #000000; }
+            @media (orientation: portrait) {
+              html body article .article-container .img-container img {
+                width: 100%; } }
+        html body article .article-container .download-button-container {
+          text-align: center; }
+          html body article .article-container .download-button-container .btn-3d {
+            position: relative;
+            display: inline-block;
+            padding: 0.5em 1em;
+            border: solid 3px #40AAF4;
+            border-radius: 5px;
+            background: #40AAF4;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold; }
+          html body article .article-container .download-button-container .btn-3d:hover {
+            background: #2d7cb4;
+            color: #FFF; }
+        html body article .article-container .commentary {
+          color: #292929; }
+          html body article .article-container .commentary h2 {
+            margin: 20px 0;
+            padding: 0.25em 0.5em;
+            border-bottom: solid 3px #292929; }
+          html body article .article-container .commentary p {
+            margin: 10px 0; }
+        html body article .article-container .change-log {
+          color: #292929; }
+          html body article .article-container .change-log h2 {
+            margin: 20px 0;
+            padding: 0.25em 0.5em;
+            border-bottom: solid 3px #292929; }
+    html body footer {
+      display: flex;
+      height: 15vh;
+      background-color: #333;
+      color: #fff;
+      place-items: center; }
+      html body footer .footer-container {
+        width: 100%; }
+        html body footer .footer-container p {
+          text-align: center;
+          font-size: 2rem; }
