@@ -4,7 +4,6 @@ html {
   font-style: 8px;
   font-family: a-otf-ud-shin-go-pr6n, sans-serif; }
   html body {
-    min-height: 100vh;
     background: #f4f4f4 0 0 no-repeat padding-box; }
     html body header {
       display: flex;
@@ -45,10 +44,25 @@ html {
         html body article {
           width: 100%; } }
       html body article .article-container {
-        padding: 2% 4% 4% 4%; }
+        padding: 2% 4% 4%; }
         @media (orientation: portrait) {
           html body article .article-container {
-            padding: 4% 10% 10% 10%; } }
+            padding: 4% 10% 10%; } }
+        html body article .article-container .breaking {
+          position: absolute;
+          left: -30vw;
+          width: 150vw;
+          height: 15px;
+          background-color: #f4f4f4; }
+        html body article .article-container .menu-wrap .menu-container {
+          margin: 1vh 0 3vh;
+          width: 100%; }
+          html body article .article-container .menu-wrap .menu-container ul {
+            padding: 0.5em 0.5em 0.5em 2em;
+            border: solid 3px #72afbd;
+            background: #fcfcfc; }
+            html body article .article-container .menu-wrap .menu-container ul li {
+              padding: 0.5em 0; }
         html body article .article-container .str {
           background: linear-gradient(transparent 50%, rgba(100, 100, 255, 0.25) 65%);
           font-weight: bold;
@@ -56,27 +70,29 @@ html {
         @media (orientation: portrait) {
           html body article .article-container {
             font-size: 0.85rem; } }
-        html body article .article-container .title h2 {
-          position: relative;
-          margin-bottom: 3vh;
-          padding: 0.6em;
-          width: 75%;
-          border-radius: 10px;
-          background: #e0edff;
-          text-align: center; }
-          @media (orientation: portrait) {
-            html body article .article-container .title h2 {
-              width: 100%;
-              font-size: 0.9rem; } }
-        html body article .article-container .title h2:after {
-          position: absolute;
-          top: 100%;
-          left: 30px;
-          width: 0;
-          height: 0;
-          border: 15px solid transparent;
-          border-top: 15px solid #e0edff;
-          content: ''; }
+        html body article .article-container .title {
+          margin-top: 7vh; }
+          html body article .article-container .title h2 {
+            position: relative;
+            margin-bottom: 3vh;
+            padding: 0.6em;
+            width: 75%;
+            border-radius: 10px;
+            background: #e0edff;
+            text-align: center; }
+            @media (orientation: portrait) {
+              html body article .article-container .title h2 {
+                width: 100%;
+                font-size: 0.9rem; } }
+          html body article .article-container .title h2:after {
+            position: absolute;
+            top: 100%;
+            left: 30px;
+            width: 0;
+            height: 0;
+            border: 15px solid transparent;
+            border-top: 15px solid #e0edff;
+            content: ''; }
         html body article .article-container .img-container {
           display: flex;
           align-items: center;
@@ -105,6 +121,7 @@ html {
             background: #2d7cb4;
             color: #FFF; }
         html body article .article-container .commentary {
+          margin-top: 5vh;
           color: #292929; }
           html body article .article-container .commentary h2 {
             margin: 20px 0;
@@ -113,6 +130,7 @@ html {
           html body article .article-container .commentary p {
             margin: 10px 0; }
         html body article .article-container .change-log {
+          margin-bottom: 2vh;
           color: #292929; }
           html body article .article-container .change-log h2 {
             margin: 20px 0;

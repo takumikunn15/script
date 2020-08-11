@@ -1,4 +1,5 @@
-// 2020 takumikunn15 Ver1.0
+// 2020 takumikunn15
+// 2020/8/6 Ver1.0
 // バグあったらごめんなさい
 // https://takumikunn15.github.io/script/
 #target "illustrator"
